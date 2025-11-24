@@ -12,7 +12,7 @@ class InputPayload(BaseModel):
 
 @app.route("/", methods=["GET"])
 def root():
-    return jsonify({"message": "Sentiment MID API (Flask) running"}), 200
+    return jsonify({"message": "Sentiment API (Flask) running"}), 200
 
 @app.route("/predict", methods=["POST"])
 def predict():
